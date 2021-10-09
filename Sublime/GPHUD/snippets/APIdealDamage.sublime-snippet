@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsAPIX(${1:CALLER}, "Roller.rollDamageAgainst", [${2:target}, 1, 1, 0, 0, 1, 0, ${3:final}, ${4:CALLER + output}])
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dealDamageAPI</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description></description>
+
+</snippet>

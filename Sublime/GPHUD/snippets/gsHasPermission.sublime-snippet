@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsHasPermission(${1:String permission})
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsHasPermission</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(True/False) whether avatar has permission.</description>
+
+</snippet>

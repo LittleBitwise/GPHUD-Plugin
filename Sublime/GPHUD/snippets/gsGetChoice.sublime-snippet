@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsGetChoice(${1:Character char}, ${2:String message}, ${3:List strings})
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsGetChoice</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(String) selection</description>
+
+</snippet>

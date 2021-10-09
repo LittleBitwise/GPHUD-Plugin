@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsGetCharacterKV(${1:Character char}, ${2:String kvname})
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsGetCharacterKV</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(String) value</description>
+
+</snippet>

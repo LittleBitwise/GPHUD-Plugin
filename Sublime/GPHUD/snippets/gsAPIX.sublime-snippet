@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsAPIX(${1:Character caller}, ${2:String apicall}, ${3:BCList parameters})
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsAPIX</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(Response/Error) from API call</description>
+
+</snippet>

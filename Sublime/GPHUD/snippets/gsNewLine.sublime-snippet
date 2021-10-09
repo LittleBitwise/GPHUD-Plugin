@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsNewLine()
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsNewLine</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(String) newline</description>
+
+</snippet>

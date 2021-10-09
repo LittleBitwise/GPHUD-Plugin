@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsFunction(${:})
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsFunction</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(Type) of return</description>
+
+</snippet>

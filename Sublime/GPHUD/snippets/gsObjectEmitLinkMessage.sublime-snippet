@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+gsObjectEmitLinkMessage(${1:String senderUUID}, ${2:Integer n}, ${3:String str}, ${4:String id})
+]]></content>
+
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>gsObjectEmitLinkMessage</tabTrigger>
+
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.gphud</scope>
+
+    <!-- Optional: Notes about the function. -->
+    <description>(Integer) zero</description>
+
+</snippet>
