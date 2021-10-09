@@ -1,0 +1,71 @@
+%YAML 1.2
+---
+# See:
+# https://www.sublimetext.com/docs/syntax.html
+# https://www.sublimetext.com/docs/scope_naming.html
+# https://sl.coagulate.net/Docs/GPHUD/index.php/Scripting.html#Language
+
+name: GPHUD
+
+file_extensions: [gphud]
+scope: source.gphud
+
+variables:
+
+  reserved: \b(?:if|else|while|CALLER|AVATAR|Integer|String|Character|Avatar|Group|List|Response)\b
+
+  keyword: \b(?:if|else|while)\b
+
+  magic: \b(?:CALLER|AVATAR)\b
+
+  type: \b(?:Integer|String|Character|Avatar|Group|List|Response)\b
+
+  identifier: \b(?!{{reserved}})[[:alpha:]_][[:alnum:]_]*\b
+
+  gsfunction: \bgs[[:alpha:]]+(?=\s*\()\b
+
+  number: \b-?[0-9.]+\b
+
+contexts:
+  main:
+    - match: '//'
+      scope: punctuation.definition.comment
+      push: comment
+
+    - match: '"'
+      scope: punctuation.definition.string.begin
+      push: string
+
+    - match: '\b{{keyword}}\b'
+      scope: keyword.control
+
+    - match: \b{{magic}}\b
+      scope: constant.language
+
+    - match: \b{{type}}\b
+      scope: storage.type
+
+    - match: '\b{{number}}\b'
+      scope: constant.numeric
+
+    - match: '\b{{gsfunction}}\b'
+      scope: entity.name.function
+
+    - match: '\b{{identifier}}\b'
+      scope: variable.other
+
+  string:
+    - meta_scope: string.quoted.double
+
+    - match: '\\.'
+      scope: constant.character.escape
+
+    - match: '"'
+      scope: punctuation.definition.string.end
+      pop: true
+
+  comment:
+    - meta_scope: comment.line
+
+    - match: $
+      pop: true
